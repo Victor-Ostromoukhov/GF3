@@ -1,0 +1,21 @@
+newmtl diffuse50SG
+Kd 0.7 0.7 0.7
+map_Kd debug2x2.png
+
+newmtl red50SG
+Kd 0.7 0.2 0.2
+map_Kd debug2x2red.png
+
+newmtl diffuseLuminaire1SG
+Ke 100 100 100
+
+newmtl mirrorSG
+Kd 0.5 0.5 0.5
+Ks 0.5 0.5 0.5
+Ns 150
+
+newmtl glossyred50SG
+Kd 0.5 0.2 0.2
+Ks 0.5 0.2 0.2
+Ns 25
+

@@ -1,0 +1,19 @@
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp-white2n32.dat  --white -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp1-white2n32.dat  --size 1  --white -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp4-white2n32.dat  --size 4  --white -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp8-white2n32.dat  --size 8  --white -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp16-white2n32.dat --size 16 --white -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp32-white2n32.dat --size 32 --white -n 32
+
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp-morton2n32.dat  --morton -n 32 
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp1-morton2n32.dat  --size 1  --morton -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp4-morton2n32.dat  --size 4  --morton -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp8-morton2n32.dat  --size 8  --morton -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp16-morton2n32.dat --size 16 --morton -n 32
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp32-morton2n32.dat --size 32 --morton -n 32
+
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp-owenpp2n32.dat  --owenpp -n 32 
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp-owen2n32.dat  --owen -n 32 
+./testIntegrationND -d 2 --dirs ../../../data/sobol_init_tab.dat -o tmp-sobol2.dat  --sobol
+
+

@@ -1,0 +1,168 @@
+## sobol JK random seeds
+#~ bin/path6d --prefix cornell/cornell-JK -s   1 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK -s   4 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK -s  16 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK -s  64 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK -s 256 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+## sobolpp random seeds, dimensions 1, 2
+#~ bin/path6d --prefix cornell/cornell-sobol12pp -s   1 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-sobol12pp -s   4 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-sobol12pp -s  16 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-sobol12pp -s  64 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-sobol12pp -s 256 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds random_seeds128.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+
+## sobolpp init seeds, dimensions 1, 2
+#~ bin/path6d --prefix cornell/cornell-rand12pp -s   1 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand12pp -s   4 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand12pp -s  16 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand12pp -s  64 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand12pp -s 256 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+## sobolpp optimized seeds, dimensions 1, 2
+#~ bin/path6d --prefix cornell/cornell-seed12pp -s   1 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter02400000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed12pp -s   4 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter02400000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed12pp -s  16 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter02400000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed12pp -s  64 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter02400000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed12pp -s 256 --sampler sobolpp --dims "2 0:1 1:2" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter02400000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+## sobolpp init seeds, dimensions 3, 4
+#~ bin/path6d --prefix cornell/cornell-rand34pp -s   1 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand34pp -s   4 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand34pp -s  16 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand34pp -s  64 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand34pp -s 256 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter00000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+## sobolpp optimized seeds, dimensions 3, 4
+#~ bin/path6d --prefix cornell/cornell-seed34pp -s   1 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter01000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed34pp -s   4 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter01000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed34pp -s  16 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter01000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed34pp -s  64 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter01000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed34pp -s 256 --sampler sobolpp --dims "2 0:3 1:4" --sobol_table ../../math/data/vo_sobol_init_tab.dat --seeds ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter01000000.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+
+## random
+#~ bin/path6d --prefix cornell/cornell-random -s   1 --sampler random --dims "2 0:0 1:1" --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-random -s   4 --sampler random --dims "2 0:0 1:1" --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-random -s  16 --sampler random --dims "2 0:0 1:1" --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-random -s  64 --sampler random --dims "2 0:0 1:1" --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-random -s 256 --sampler random --dims "2 0:0 1:1" --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+## sampler siggraph 2019
+#~ bin/path6d --prefix cornell/cornell-s19 -s   1 --sampler sampler19 -d 4 --remap_dims "7 5:0 6:1" --force_null_rotation --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-s19 -s   4 --sampler sampler19 -d 4 --remap_dims "7 5:0 6:1" --force_null_rotation --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-s19 -s  16 --sampler sampler19 -d 4 --remap_dims "7 5:0 6:1" --force_null_rotation --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-s19 -s  64 --sampler sampler19 -d 4 --remap_dims "7 5:0 6:1" --force_null_rotation --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/path6d --prefix cornell/cornell_dof-s19 -s   1 --sampler sampler19 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens--remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell_dof-s19 -s   4 --sampler sampler19 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens--remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell_dof-s19 -s  16 --sampler sampler19 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens--remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell_dof-s19 -s  64 --sampler sampler19 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens--remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+
+#~ bin/path6d --prefix cornell/cornell-random-dof -s 16 --sampler random -d 7 --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-random-dof2d -s 16 --sampler random -d 7 --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/path6d --prefix cornell/cornell-JK-dof -s   1 --sampler sobolpp --dims "6 0:0 1:1 2:2 3:3 4:4 5:5" --owen_bits 0 --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK-dof -s   4 --sampler sobolpp --dims "6 0:0 1:1 2:2 3:3 4:4 5:5" --owen_bits 0 --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK-dof -s  16 --sampler sobolpp --dims "6 0:0 1:1 2:2 3:3 4:4 5:5" --owen_bits 0 --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK-dof -s  64 --sampler sobolpp --dims "6 0:0 1:1 2:2 3:3 4:4 5:5" --owen_bits 0 --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-JK-dof -s 256 --sampler sobolpp --dims "6 0:0 1:1 2:2 3:3 4:4 5:5" --owen_bits 0 --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds random6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/seeds optim123456_seeds128.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter10000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter10000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind5_6_iter10000000.dat 
+#~ bin/path6d --prefix cornell/cornell-seed6dpp-dof6d -s   1 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds optim123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed6dpp-dof6d -s   4 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds optim123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed6dpp-dof6d -s  16 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds optim123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed6dpp-dof6d -s  64 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds optim123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-seed6dpp-dof6d -s 256 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds optim123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/seeds rand6d_seeds128.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter00000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind5_6_iter00000000.dat 
+#~ bin/path6d --prefix cornell/cornell-rand6dpp-dof6d -s   1 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand6dpp-dof6d -s   4 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand6dpp-dof6d -s  16 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand6dpp-dof6d -s  64 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-rand6dpp-dof6d -s 256 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/seeds iter0-123456_seeds128.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind3_4_iter00000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind5_6_iter00000000.dat 
+#~ bin/path6d --prefix cornell/cornell-123456 -s  1 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-123456 -s  4 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-123456 -s 16 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-123456 -s 64 --sampler sobolpp --dims "6 0:1 1:2 2:3 3:4 4:5 5:6" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-123456_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/seeds iter0-1278910_seeds128.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind1_2_iter00000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind7_8_iter00000000.dat ../../math/data_ScreenSpace/tile_barycenters_128x128_ind9_10_iter00000000.dat 
+#~ bin/path6d --prefix cornell/cornell-1278910 -s  1 --sampler sobolpp --dims "6 0:1 1:2 2:7 3:8 4:9 5:10" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-1278910_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-1278910 -s  4 --sampler sobolpp --dims "6 0:1 1:2 2:7 3:8 4:9 5:10" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-1278910_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-1278910 -s 16 --sampler sobolpp --dims "6 0:1 1:2 2:7 3:8 4:9 5:10" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-1278910_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-1278910 -s 64 --sampler sobolpp --dims "6 0:1 1:2 2:7 3:8 4:9 5:10" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds iter0-1278910_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ ## pseudo ref dof 
+#~ bin/path6d --prefix cornell/cornell-dof-ref -s 4096 --sampler sobolpp --dims "6 0:0 1:1 2:2 3:3 4:4 5:5" --sobol_table ../../data/sobol_init_tab_JoeKuo.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell_dof-random -s  1 --sampler random -d 7 --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell_dof-random -s  4 --sampler random -d 7 --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell_dof-random -s 16 --sampler random -d 7 --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell_dof-random -s 64 --sampler random -d 7 --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/path6d --prefix cornell/cornell-125678 -s   16 --sampler sobolpp --dims "6 0:1 1:2 2:5 3:6 4:7 5:8" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix cornell/cornell-129101112 -s   16 --sampler sobolpp --dims "6 0:1 1:2 2:9 3:10 4:11 5:12" --sobol_table ../../data/vo_sobol_init_tab.dat --seeds rand6d_seeds128.dat --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_lens --sample_subpixel --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+## ref 4k
+#~ bin/path6d --prefix cornell/cornell-ref -s 4096 --sampler owen -d 2 --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+## erreurs
+#~ bin/stats --scale 0.002 cornell/cornell-stats-seed12pp.exr cornell/cornell-ref-04096.pfm cornell/cornell-seed12pp-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-seed34pp.exr cornell/cornell-ref-04096.pfm cornell/cornell-seed34pp-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-rand12pp.exr cornell/cornell-ref-04096.pfm cornell/cornell-rand12pp-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-rand34pp.exr cornell/cornell-ref-04096.pfm cornell/cornell-rand34pp-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-JKpp.exr cornell/cornell-ref-04096.pfm cornell/cornell-JKpp-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-JK.exr cornell/cornell-ref-04096.pfm cornell/cornell-JK-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-random.exr cornell/cornell-ref-04096.pfm cornell/cornell-random-0????.pfm
+
+## conversion png
+#~ bin/hdrtopng cornell/cornell-ref-04096.pfm
+#~ bin/hdrtopng --range cornell/cornell-ref-04096.pfm cornell/cornell-JKpp-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-ref-04096.pfm cornell/cornell-JK-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-ref-04096.pfm cornell/cornell-seed12pp-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-ref-04096.pfm cornell/cornell-seed34pp-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-ref-04096.pfm cornell/cornell-rand12pp-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-ref-04096.pfm cornell/cornell-rand34pp-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-ref-04096.pfm cornell/cornell-random-0????.pfm
+
+#~ bin/hdrtopng cornell/cornell-dof-ref-04096.pfm
+#~ bin/hdrtopng --range cornell/cornell-dof-ref-04096.pfm cornell/cornell-123456-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-dof-ref-04096.pfm cornell/cornell-1278910-0????.pfm
+#~ bin/hdrtopng --range cornell/cornell-dof-ref-04096.pfm cornell/cornell_dof-random-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-123456.exr cornell/cornell-dof-ref-04096.pfm cornell/cornell-123456-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-1278910.exr cornell/cornell-dof-ref-04096.pfm cornell/cornell-1278910-0????.pfm
+#~ bin/stats --scale 0.002 cornell/cornell-stats-random.exr cornell/cornell-dof-ref-04096.pfm cornell/cornell_dof-random-0????.pfm
+
+## planche de resultats
+#~ bin/grid cornell/sobolpp.png \
+	#~ --line 1 --title "ref4k" cornell/cornell-ref-04096.png \
+	#~ --line 2 --title "JK owen" cornell/cornell-JK-0*.png \
+	#~ --line 3 cornell/error_cornell-JK-0*.png \
+	#~ --line 4 --title "sobolpp (1,2)" cornell/cornell-seed12pp-0*.png \
+	#~ --line 5 cornell/error_cornell-seed12pp-0*.png \
+	#~ --line 4 --title "sobolpp (3,4)" cornell/cornell-seed34pp-0*.png \
+	#~ --line 5 cornell/error_cornell-seed34pp-0*.png \
+
+#~ bin/grid cornell/sobolpp.png \
+	#~ --line 1 --title "sobolpp (1,2)" cornell/cornell-seed12pp-0*.png \
+	#~ --line 2 cornell/error_cornell-seed12pp-0*.png \
+	#~ --line 3 --title "sobolpp (1,2) iter 0" cornell/cornell-rand12pp-0*.png \
+	#~ --line 4 cornell/error_cornell-rand12pp-0*.png \
+	#~ --line 5 --title "sobolpp (3,4)" cornell/cornell-seed34pp-0*.png \
+	#~ --line 6 cornell/error_cornell-seed34pp-0*.png \
+	#~ --line 7 --title "sobolpp (3,4) iter 0" cornell/cornell-rand34pp-0*.png \
+	#~ --line 8 cornell/error_cornell-rand34pp-0*.png \
+
+#~ convert cornell/sobolpp.png cornell/sobolpp.jpg
+
+#~ bin/grid cornell/cornell-dof.png \
+	#~ --line 1 --title "ref 4k" cornell/cornell-dof-ref-04096.png \
+	#~ --line 2 --title "(1,2) (3,4) (5,6)" cornell/cornell-123456-0*.png \
+	#~ --line 3 cornell/error_cornell-123456-0*.png \
+	#~ --line 4 --title "(1,2) (7,8) (9,10)" cornell/cornell-1278910-0*.png \
+	#~ --line 5 cornell/error_cornell-1278910-0*.png \
+	#~ --line 6 --title "random" cornell/cornell_dof-random-0*.png \
+	#~ --line 7 cornell/error_cornell_dof-random-0*.png

@@ -1,0 +1,20 @@
+newobj sphere
+mesh balls/ball_00.obj
+translation -2 0 -2
+frame 0
+translation -6 0 -2
+frame 1
+translation -6 0 -2.5
+frame 2
+
+newobj scene
+mesh balls/scene.obj
+# frame 0
+# translation -0.1 0 0.1
+# frame 1
+
+useobj scene
+useobj sphere
+
+uselens balls/balls_lens.txt
+usecamera balls/balls_orbiter.txt

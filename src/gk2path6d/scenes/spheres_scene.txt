@@ -1,0 +1,23 @@
+newobj sphere
+#mesh cornell3_sphere2_01.obj
+mesh cornell3_sphere2_%02d.obj
+frames 2 11
+translation -0.1 0 0
+
+newobj sphere2
+mesh cornell3_sphere2_%02d.obj
+frames 3 11
+translation -0.5 0 0
+
+newobj sphere3
+mesh cornell3_sphere2_%02d.obj
+frames 4 11
+translation -0.9 0 0
+
+newobj cornell
+mesh cornell.obj
+
+useobj cornell
+useobj sphere
+useobj sphere2
+useobj sphere3

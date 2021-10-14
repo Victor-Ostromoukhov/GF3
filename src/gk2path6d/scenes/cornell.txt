@@ -1,0 +1,17 @@
+newobj spheres
+#mesh cornell3_sphere2_01.obj
+mesh cornell3_sphere2_%02d.obj
+frames 5 11
+
+newobj sphere
+mesh cornell3_sphere2_07.obj
+
+newobj cornell
+mesh cornell3_bars.obj
+
+useobj cornell
+useobj sphere
+#useobj spheres
+
+uselens cornell_lens.txt
+usecamera cornell3_orbiter.txt

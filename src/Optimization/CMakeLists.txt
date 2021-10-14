@@ -1,0 +1,7 @@
+add_executable(optimizeScreenSpace2D optimizeScreenSpace2D.cpp)
+target_link_libraries(optimizeScreenSpace2D PRIVATE OpenMP::OpenMP_CXX)
+
+add_executable(optimizeScreenSpacenD optimizeScreenSpacenD.cpp)
+target_link_libraries(optimizeScreenSpacenD PRIVATE Integrands OpenMP::OpenMP_CXX)
+
+add_executable(generateRandomSeedTile generateRandomSeedTile.cpp)

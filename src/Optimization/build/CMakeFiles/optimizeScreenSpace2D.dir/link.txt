@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/usr/bin/g++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -mmacosx-version-min=10.15 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/optimizeScreenSpace2D.dir/optimizeScreenSpace2D.cpp.o  -o optimizeScreenSpace2D  -lOpenMP::OpenMP_CXX 

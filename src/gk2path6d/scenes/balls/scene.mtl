@@ -1,0 +1,18 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl default
+  Kd 0.8 0.8 0.8
+
+newmtl ball
+  Kd 0.8 0.1 0.1
+
+newmtl cube1
+  Kd 0.6 0.6 0.6
+
+newmtl cube2
+  Kd 0.7 0.7 0.5
+
+newmtl light
+  Ke 1 1 1
+  

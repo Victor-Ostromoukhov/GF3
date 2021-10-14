@@ -1,0 +1,14 @@
+ 
+plot "./sobol2.dat" w lines lw 1.5 t "Sobol", "./tmp-owen2n32.dat" w lines t "Owen", "./tmp-owenpp2n32.dat" w lines lw 1.5 t "Owen++", "./tmp-morton2n32.dat" w linespoints t "Z", "./tmp-white2n32.dat" w linespoints t "White"
+
+plot "./sobol2.dat" w lines lw 1.5 t "Sobol", "./tmp-owen2n32.dat" w lines t "Owen", "./tmp-owenpp2n32.dat" w lines lw 1.5 t "Owen++", "./tmp1-morton2n32.dat" w linespoints t "1x1 Z", "./tmp1-white2n32.dat" w linespoints t "1x1 White"
+
+plot "./sobol2.dat" w lines lw 1.5 t "Sobol", "./tmp-owen2n32.dat" w lines t "Owen", "./tmp-owenpp2n32.dat" w lines lw 1.5 t "Owen++", "./tmp4-morton2n32.dat" w linespoints t "4x4 Z", "./tmp4-white2n32.dat" w linespoints t "4x4 White"
+
+plot "./sobol2.dat" w lines lw 1.5 t "Sobol", "./tmp-owen2n32.dat" w lines t "Owen", "./tmp-owenpp2n32.dat" w lines lw 1.5 t "Owen++", "./tmp8-morton2n32.dat" w linespoints t "8x8 Z", "./tmp8-white2n32.dat" w linespoints t "8x8 White"
+
+plot "./sobol2.dat" w lines lw 1.5 t "Sobol", "./tmp-owen2n32.dat" w lines t "Owen", "./tmp-owenpp2n32.dat" w lines lw 1.5 t "Owen++", "./tmp16-morton2n32.dat" w linespoints t "16x16 Z", "./tmp16-white2n32.dat" w linespoints t "16x16 White"
+
+plot "./sobol2.dat" w lines lw 1.5 t "Sobol", "./tmp-owen2n32.dat" w lines t "Owen", "./tmp-owenpp2n32.dat" w lines lw 1.5 t "Owen++", "./tmp32-morton2n32.dat" w linespoints t "32x32 Z", "./tmp32-white2n32.dat" w linespoints t "32x32 White"
+
+

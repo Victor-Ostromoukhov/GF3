@@ -1,0 +1,41 @@
+## sampler morton / re-impl du Z sampler
+mkdir morton_white
+
+bin/path6d --prefix morton_white/tmp-2d --sampler morton -s   1 -d 2 --sobol_table ../../data/sobol_init_tab.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+bin/path6d --prefix morton_white/tmp-2d --sampler morton -s   4 -d 2 --sobol_table ../../data/sobol_init_tab.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+bin/path6d --prefix morton_white/tmp-2d --sampler morton -s  16 -d 2 --sobol_table ../../data/sobol_init_tab.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+bin/path6d --prefix morton_white/tmp-2d --sampler morton -s  64 -d 2 --sobol_table ../../data/sobol_init_tab.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+bin/path6d --prefix morton_white/tmp-2d --sampler morton -s 256 -d 2 --sobol_table ../../data/sobol_init_tab.dat --remap_dims "7 5:0 6:1" --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/path6d --prefix z/tmp-4d --sampler z -s   1 -d 4 --remap_dims "7 2:0 3:1 5:2 6:3" --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-4d --sampler z -s   4 -d 4 --remap_dims "7 2:0 3:1 5:2 6:3" --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-4d --sampler z -s  16 -d 4 --remap_dims "7 2:0 3:1 5:2 6:3" --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-4d --sampler z -s  64 -d 4 --remap_dims "7 2:0 3:1 5:2 6:3" --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-4d --sampler z -s 256 -d 4 --remap_dims "7 2:0 3:1 5:2 6:3" --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/path6d --prefix z/tmp-6d --sampler z -s   1 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-6d --sampler z -s   4 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-6d --sampler z -s  16 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-6d --sampler z -s  64 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+#~ bin/path6d --prefix z/tmp-6d --sampler z -s 256 -d 6 --remap_dims "7 0:0 1:1 2:2 3:3 5:4 6:5" --sample_subpixel --sample_lens --remap_bounce true --source_2d true --brdf_2d true --source_quad1 true --force_direct --scene scenes/cornell_sphere2_scene.txt --help
+
+#~ bin/hdrtopng cornell/cornell-ref-04096.pfm
+bin/hdrtopng --range cornell/cornell-ref-04096.pfm morton_white/tmp-2d-0????.pfm
+bin/stats --scale 0.002 morton_white/cornell-stats-2d.exr cornell/cornell-ref-04096.pfm morton_white/tmp-2d-0????.pfm
+
+#~ bin/hdrtopng cornell/cornell-dof4d-ref-04096.pfm
+#~ bin/hdrtopng --range cornell/cornell-dof4d-ref-04096.pfm z/tmp-4d-0????.pfm
+#~ bin/stats --scale 0.002 z/cornell-stats-4d.exr cornell/cornell-dof4d-ref-04096.pfm z/tmp-4d-0????.pfm
+
+#~ bin/hdrtopng cornell/cornell-dof-ref-04096.pfm
+#~ bin/hdrtopng --range cornell/cornell-dof-ref-04096.pfm z/tmp-6d-0????.pfm
+#~ bin/stats --scale 0.002 z/cornell-stats-6d.exr cornell/cornell-dof-ref-04096.pfm z/tmp-6d-0????.pfm
+
+bin/grid morton/morton.png \
+	--line 1 --title "ref 2d" cornell/cornell-ref-04096.png \
+	--line 2 --title "Z" z/tmp-2d-0*.png \
+	--line 3 z/error_tmp-2d-0*.png \
+	--line 4 --title "Morton" morton/tmp-2d-0*.png \
+	--line 5 morton/error_tmp-2d-0*.png \
+	--line 6 --title "Morton white" morton_white/tmp-2d-0*.png \
+	--line 7 morton_white/error_tmp-2d-0*.png 

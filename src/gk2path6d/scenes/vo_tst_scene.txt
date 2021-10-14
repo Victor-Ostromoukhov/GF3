@@ -1,0 +1,58 @@
+newobj sphere
+mesh cornell3_sphere2_%02d.obj
+frames 5 11
+translation .2 0 .1
+
+newobj sphere2
+mesh cornell3_sphere2_%02d.obj
+frames 6 11
+translation -.3 0 0
+
+newobj sphere3
+mesh cornell3_sphere2_%02d.obj
+frames 7 11
+translation -0.9 0 0
+
+newobj sphere4
+mesh cornell3_sphere2_11.obj
+
+# transformations animees
+# position de depart
+translation -0.9 -0.15 0
+frame 0	
+
+# position d'arrivee
+translation 0 -0.15 0
+frame 1
+# on peut definir autant de positions intermediaires, il suffit de les numeroter 0, 1, 2, etc.
+
+newobj cornell
+mesh walls.obj
+
+newobj box
+mesh box.obj
+scale 1.75 1 1.75
+translation 0.2 0 -.1
+# transformations appliquees dans l'ordre
+#rotation 10 0 1 0
+
+#translation x y z
+#scale x y z
+#rotation angle x y z (angle en degrees)
+
+
+newobj bars
+mesh bars.obj
+
+useobj cornell
+useobj box
+useobj bars
+
+useobj sphere
+useobj sphere2
+#useobj sphere3
+#useobj sphere4
+
+
+usecamera vo_tst_camera.txt
+uselens vo_tst_lens.txt

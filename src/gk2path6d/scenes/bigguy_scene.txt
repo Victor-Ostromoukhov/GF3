@@ -1,0 +1,9 @@
+newobj bigguy
+mesh /home/jciehl/scenes/Bigguy/bigguy_%02d.obj
+frames 2 4
+
+newobj ground
+mesh /home/jciehl/scenes/Bigguy/ground_normals.obj
+
+useobj bigguy
+useobj ground

@@ -1,0 +1,7 @@
+Resources[
+    Version[1],
+    ExecutionBuildCommand["<<GF3`"],
+    Paclet[
+        FunctionPaclet[False]
+    ]
+]
