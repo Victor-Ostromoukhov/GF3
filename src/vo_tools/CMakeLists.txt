@@ -52,12 +52,4 @@ add_executable(getUniformNDpts getUniformNDpts.cpp)
 target_link_libraries(getUniformNDpts PRIVATE OpenMP::OpenMP_CXX)
 install(TARGETS getUniformNDpts DESTINATION ~/bin)
 
-#add_executable(owen64 owen64.cpp)
-#target_link_libraries(owen64 PRIVATE OpenMP::OpenMP_CXX)
-#install(TARGETS owen64 DESTINATION ~/bin)
-
-#add_executable(owen64global owen64global.cpp)
-#target_link_libraries(owen64global PRIVATE OpenMP::OpenMP_CXX)
-#install(TARGETS owen64global DESTINATION ~/bin)
-
 SET(CMAKE_INSTALL_PREFIX $ENV{HOME})
